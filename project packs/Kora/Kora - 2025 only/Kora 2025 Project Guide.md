@@ -2,7 +2,7 @@
 
 # Kora free starter project pack
 
-CadencePlus Solutions™ · Version 1.0 · 27 October 2026 Kora Workplace Supply Ltd is a fictional Nigerian supplier. This pack contains seven related tables, 29,066 records and two project briefs, it is free to use for learning. In this pack you will:
+CadencePlus Solutions™ · Version 1.0 · October 2026 Kora Workplace Supply Ltd is a fictional Nigerian supplier. This pack contains seven related tables, 29,066 records and two project briefs, it is free to use for learning. In this pack you will:
 
 - Load a local database (see [Kora 2025 Database Setup Guide](Kora%202025%20Database%20Setup%20Guide.md) for details).
 - Investigate two business questions.
