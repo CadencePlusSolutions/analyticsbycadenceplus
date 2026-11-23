@@ -1,0 +1,167 @@
+{
+  "KoraOperations.dataset_info": {
+    "rows": 1,
+    "csv_sha256": "faa051c4302540b469c6b1aa79151ec6468b495e4e741d7f0ac5cf19e6ee72f0"
+  },
+  "KoraOperations.months": {
+    "rows": 48,
+    "csv_sha256": "af63a805cd8d1d84ab47915852d0617b3d8ce71e8371e34bdb4c820b52988d8c"
+  },
+  "KoraOperations.branches": {
+    "rows": 6,
+    "csv_sha256": "fedeb6b2dfe192b4314917c0d0af459234340b2f8ac519a9bba089362cffbffd"
+  },
+  "KoraPeople.dataset_info": {
+    "rows": 1,
+    "csv_sha256": "faa051c4302540b469c6b1aa79151ec6468b495e4e741d7f0ac5cf19e6ee72f0"
+  },
+  "KoraPeople.months": {
+    "rows": 48,
+    "csv_sha256": "af63a805cd8d1d84ab47915852d0617b3d8ce71e8371e34bdb4c820b52988d8c"
+  },
+  "KoraPeople.branches": {
+    "rows": 6,
+    "csv_sha256": "fedeb6b2dfe192b4314917c0d0af459234340b2f8ac519a9bba089362cffbffd"
+  },
+  "KoraPeople.employees": {
+    "rows": 372,
+    "csv_sha256": "53f7b6a6529b25bd173457556d95260a1b66377aa7d35026feea052810a73a6b"
+  },
+  "KoraPeople.employment_spells": {
+    "rows": 383,
+    "csv_sha256": "3b03c38b9d7599ee84d76cb16b9e22d3ed2a51cb8ba0fdf3df48edbe71c14adb"
+  },
+  "KoraPeople.assignments": {
+    "rows": 1357,
+    "csv_sha256": "b60c60d67e8a22276bad0baa4d88c7726245bb5fd8fdc63e9cef0f56757d2487"
+  },
+  "KoraPeople.staff_monthly_snapshot": {
+    "rows": 11112,
+    "csv_sha256": "f7fee820d80754df2d83df08d759810484e75554153c7278e699390a352d3fbf"
+  },
+  "KoraPeople.staff_monthly_hours": {
+    "rows": 11227,
+    "csv_sha256": "d8ac0c7678b7a2ec16529c810dbaff40b15d12b47e51351fe7689c7c21cd194a"
+  },
+  "KoraPeople.promotion_rounds": {
+    "rows": 18,
+    "csv_sha256": "eca6838d11b568e8d91ca42733f0134f000a08021ae985762847898a73c15286"
+  },
+  "KoraPeople.promotion_candidates": {
+    "rows": 500,
+    "csv_sha256": "467091f28fbc6433e80e8f4f8ede0c543ecce1e308fa78897293cd4f43050e97"
+  },
+  "KoraOperations.customers": {
+    "rows": 800,
+    "csv_sha256": "12e525eb23456ae4f5c04ea56e1cc7b00959893ffad8a80d3956f2790754fc76"
+  },
+  "KoraOperations.products": {
+    "rows": 36,
+    "csv_sha256": "e055927c5f85267043e088b2180f34b75346fe71de9fb323052acbe26f8be633"
+  },
+  "KoraOperations.orders": {
+    "rows": 27999,
+    "csv_sha256": "14772ca9cf323e0b07ea334cd9fbce1cdf566daea09b7e0b65877fb19a1c0576"
+  },
+  "KoraOperations.order_lines": {
+    "rows": 56009,
+    "csv_sha256": "378921ac426a04a11f9de6c10821cf1b0e04d6ff601407659d2ba22fa65e2991"
+  },
+  "KoraOperations.deliveries": {
+    "rows": 30357,
+    "csv_sha256": "35f2f6c1693e1a94126ce5ca5dc35ee232969825d011f5939e9f9b01d6f212e2"
+  },
+  "KoraOperations.delivery_lines": {
+    "rows": 60366,
+    "csv_sha256": "8b20ae1730a05aa3889825669119441501ed6f01fc072a1ea83a7a32833b2eb1"
+  },
+  "KoraOperations.sales_lines": {
+    "rows": 60366,
+    "csv_sha256": "74734c94b8929ef2bcc03bbaa940ab2150f4e4c28ab29fe5f660c57aaa9dd5f4"
+  },
+  "KoraOperations.returns": {
+    "rows": 2310,
+    "csv_sha256": "ae256927bd1bea2e5f69971ac163605c76e9a582b04ac63358ffdac0cf892e92"
+  },
+  "KoraOperations.inventory_movements": {
+    "rows": 71208,
+    "csv_sha256": "f7e84928f3bfe40e49e3aa296e56cfbfeb92e2566d1796e6ad2b75ff98d2e572"
+  },
+  "KoraOperations.inventory_monthly_snapshot": {
+    "rows": 10368,
+    "csv_sha256": "59be718152dc9c7e4639d78169db6800fb74fb751b57f9c70f08dfd1951bec2f"
+  },
+  "KoraOperations.open_order_monthly_snapshot": {
+    "rows": 12520,
+    "csv_sha256": "92a7d036fe55215d72e4194bf5ede4e8e32f9d239746e7f41c52a14b4c60ac7f"
+  },
+  "KoraOperations.branch_monthly_resources": {
+    "rows": 288,
+    "csv_sha256": "582ed4835b36a13123d819cb7cc3c7a28d7f875c6955a6402aad8b7ec3cb6a55"
+  },
+  "KoraPeople.grades": {
+    "rows": 6,
+    "csv_sha256": "c741b793bfd327b8e2a6c6a5bb04b29f0edcd818778eca0724d47268e749165f"
+  },
+  "KoraOperations.payment_terms": {
+    "rows": 3,
+    "csv_sha256": "6fa879934c30f3e0d8c7c5249a470ea318387a2ce69e9b99b3f2d6007ad01f68"
+  },
+  "KoraOperations.invoices": {
+    "rows": 30194,
+    "csv_sha256": "68f12a6ae5318d81c97e673ad025a2f1d7d77346b0345c21cd2bd13a158eb6a2"
+  },
+  "KoraOperations.credit_notes": {
+    "rows": 2310,
+    "csv_sha256": "4c3bab08b326f34ace2232fde31c31781e2b73c1f9b6b177abf1c307f4e91e82"
+  },
+  "KoraOperations.cash_receipts": {
+    "rows": 29019,
+    "csv_sha256": "f1ba5b7a81b76e3d393da41fd3464ecbd022b6a25bccf532269d3f9dd349e1e3"
+  },
+  "KoraOperations.payment_allocations": {
+    "rows": 29622,
+    "csv_sha256": "4a1eec74f8fff97b9c9efdc9eba2ff55e1f787c997fccfdba6c2647a70cba435"
+  },
+  "KoraOperations.cash_refunds": {
+    "rows": 437,
+    "csv_sha256": "eec2ee2fa76829987e4e2516d153d7e6cf2426d170cefa19fafaa22eaf83acd1"
+  },
+  "KoraOperations.operating_expenses": {
+    "rows": 31509,
+    "csv_sha256": "5de28edbb1f6294824be9183f3e4f36ec44f8202efb1aa44ac501eb8f664a569"
+  },
+  "KoraOperations.monthly_budgets": {
+    "rows": 288,
+    "csv_sha256": "ebf645ea39f19b9f0a14196a256ed50e83b438b1300fa8ebaf3a76474f45ed64"
+  },
+  "KoraOperations.receivables_monthly_snapshot": {
+    "rows": 120995,
+    "csv_sha256": "f552c0a7a89fa61c0717b8e1aa965ee4a3066e3e916b2baeeafdd73d82a78d9e"
+  },
+  "KoraOperations.suppliers": {
+    "rows": 6,
+    "csv_sha256": "24ecf2330f5716ae7b8d9939be633c013e90c4bd85135591e7227f51f946dbe9"
+  },
+  "KoraOperations.purchase_orders": {
+    "rows": 7947,
+    "csv_sha256": "2fef45af0b0425cd5a70abca3664659e46cd0e33eab8384aa04a60fa0fb6aab6"
+  },
+  "KoraOperations.purchase_order_lines": {
+    "rows": 7947,
+    "csv_sha256": "7efe4f1799a7d45621354dfe60f003ab8b0d5ccf18290d0bae1b00c15071129e"
+  },
+  "KoraOperations.goods_receipts": {
+    "rows": 8938,
+    "csv_sha256": "cecc040df63f1e80be3fe35b0e309179f805a4c22bd9ca09621d8ab576f89ed9"
+  },
+  "KoraOperations.stock_shortage_events": {
+    "rows": 3816,
+    "csv_sha256": "ffc28ad31702e6bb34f06df70ac1f7cce9e2644a4b21ceb997090c43a32645e5"
+  },
+  "financial_controls": {
+    "all_order_value_ngn": 28462239676.25,
+    "invoiced_sales_ngn": 26731304805.0,
+    "refunds_ngn": 547343982.5
+  }
+}

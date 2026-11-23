@@ -1,18 +1,18 @@
 # Kora | Project Pack Collection
 
-Kora is a family of **four intended project packs** within the CadencePlus Solutions™ Resource Library. Each pack is a separate learning resource. This folder is the collection's index; it is **not** the download folder for an individual pack.
+Kora is a family of four project packs within the CadencePlus Solutions™ Resource Library.
 
-## Available now
-
-### Project 1: Kora - 2025 only
+## Project 1: Kora - 2025 only
 
 - [Browse all files](Kora%20-%202025%20only/)
-- [View the Kora 2025 Project Guide](Kora%20-%202025%20only/Kora%202025%20Project%20Guide.md)
-- [View the Kora 2025 Database Setup Guide](Kora%20-%202025%20only/Kora%202025%20Database%20Setup%20Guide.md)
+- [View the project guide](Kora%20-%202025%20only/Kora%202025%20Project%20Guide.md)
 - [Download complete ZIP](Kora%20-%202025%20only/Kora-2025-only.zip?raw=true)
 
-This published pack includes synthetic 2025 business data, local SQL Server, SQLite, PostgreSQL and MySQL setup resources, project briefs, reference files and starter templates.
+## Financial, People and Operations: Projects 2–4
 
-## Other Kora packs
+- [Browse the four-year project pack](Kora%20-%20Levels%202-4/)
+- [Read the full project guide](Kora%20-%20Levels%202-4/Guides/Kora-Workplace-Supply-Free-Project-Pack.md)
+- [Read the data dictionary](Kora%20-%20Levels%202-4/Reference/Data_Dictionary.md)
+- [Download the complete four-engine archive](Kora%20-%20Levels%202-4/#download-the-complete-pack)
 
-Three additional Kora packs are intended for this collection, but are **not currently published in this repository**. They will be linked here when their files are ready.
+These three projects share four years of synthetic data across two reporting databases. The pack includes SQL Server, PostgreSQL, MySQL and SQLite versions. Choose one business problem in each project. Reviewer solutions are distributed separately and are not in this repository.
