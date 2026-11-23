@@ -8,23 +8,10 @@ Analyze Financial, People and Operations data across four years (2022–2025). C
 - [Database schema diagrams](Reference/Database_Schema.pdf) and [all relationships](Reference/Relationships.csv)
 - [Financial guide](Guides/Kora-Financial-Analysis-Free-Project-Guide.md), [People guide](Guides/Kora-People-Analysis-Free-Project-Guide.md), [Operations guide](Guides/Kora-Operations-Free-Project-Guide.md)
 
-## Download the complete pack
+## Download the complete learner pack
 
-GitHub's upload path for this pack requires four archive parts. Download all four `.part01`–`.part04` files from this folder, then combine them in numerical order. On macOS/Linux:
+[Download Kora Levels 2–4 Learner Pack (ZIP)](Kora-Levels-2-4-Learner-Pack.zip?raw=true). Save the file, then use **Extract All** on Windows or double-click it on macOS. The ZIP contains all CSVs, four database engine loaders, guides, schema and SQL starters. The SQLite setup script builds the two SQLite databases from the CSVs. Reviewer solutions are not included. SQLite passed row-count and integrity checks; live loading on the other three engines still needs local validation.
 
-```bash
-cat Kora-Levels-2-4-Four-Database-Pack.zip.part0{1,2,3,4} > Kora-Levels-2-4-Four-Database-Pack.zip
-sha256sum -c Archive_SHA256.txt
-unzip Kora-Levels-2-4-Four-Database-Pack.zip
-```
+## Reuse and credit
 
-On Windows PowerShell:
-
-```powershell
-$parts = 1..4 | ForEach-Object { 'Kora-Levels-2-4-Four-Database-Pack.zip.part{0:D2}' -f $_ }
-$dest = [IO.File]::Create('Kora-Levels-2-4-Four-Database-Pack.zip')
-try { foreach ($part in $parts) { $source = [IO.File]::OpenRead($part); try { $source.CopyTo($dest) } finally { $source.Dispose() } } } finally { $dest.Dispose() }
-Get-FileHash Kora-Levels-2-4-Four-Database-Pack.zip -Algorithm SHA256
-```
-
-Compare the Windows hash with `Archive_SHA256.txt`, then extract the ZIP. The archive contains all CSVs, four engine loaders, two ready SQLite database files, guides, schema and SQL starters. SQLite passed row-count and integrity checks; live loading on the other three engines still needs local validation.
+You may analyse, modify and publish your SQL, dashboards and findings using this free training dataset with credit to CadencePlus Solutions™. Keep the fictional and synthetic labels. Do not present its values as real customer, employee or market data. Third-party software has its own licences.

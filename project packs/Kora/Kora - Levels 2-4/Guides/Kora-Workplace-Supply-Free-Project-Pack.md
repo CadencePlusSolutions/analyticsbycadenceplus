@@ -7,6 +7,8 @@ Analyze Financial, People and Operations data
 
 Kora Workplace Supply Ltd. is a fictional Nigerian supplier. This free pack contains two related reporting databases, 40 tables, 630,743 records and three project guides covering four years of business activity. It is free to use for learning.
 
+[Download the complete learner ZIP](../Kora-Levels-2-4-Learner-Pack.zip?raw=true) · [Database setup guide](Kora-Database-Setup-Guide.md) · [Data dictionary](../Reference/Data_Dictionary.md) · [Schema diagrams](../Reference/Database_Schema.pdf)
+
 In this pack you will:
 
 • Load the two reporting databases using your chosen engine and the Database Setup Guide.
@@ -17,11 +19,15 @@ In this pack you will:
 
 ## Your project guides
 
-Kora Financial Analysis - Free Project Guide: profitability, budgets, receivables and collections.
+ [Kora Financial Analysis - Free Project Guide](Kora-Financial-Analysis-Free-Project-Guide.md): profitability, budgets, receivables and collections.
 
-Kora People Analysis - Free Project Guide: retention, workforce movement and progression opportunities.
+ [Kora People Analysis - Free Project Guide](Kora-People-Analysis-Free-Project-Guide.md): retention, workforce movement and progression opportunities.
 
-Kora Operations - Free Project Guide: branch service, capacity, inventory and replenishment.
+ [Kora Operations - Free Project Guide](Kora-Operations-Free-Project-Guide.md): branch service, capacity, inventory and replenishment.
+
+## Reuse and credit
+
+You may analyse, modify and publish your SQL, dashboards and findings using this free training dataset with credit to CadencePlus Solutions™. Keep the fictional and synthetic labels. Do not present its values as real customer, employee or market data. Third-party software has its own licences.
 
 The projects progress from financial reconciliation to effective-dated people analysis and then to operational decisions under resource constraints. Use the "Think it Through" framework; it is included in this guide.
 
