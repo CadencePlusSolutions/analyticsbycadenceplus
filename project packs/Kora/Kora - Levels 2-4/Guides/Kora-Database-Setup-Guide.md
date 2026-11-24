@@ -11,13 +11,10 @@ Start from an empty database pair. Do not append to Kora Starter. The source CSV
 
 ## Choose an engine
 
-SQL Server: run the T-SQL scripts in Database/SQL_Server with SQL Server Management Studio or another T-SQL client.
-
-PostgreSQL: use psql for the scripts in Database/PostgreSQL; open a terminal in the extracted `Kora-Levels-2-4` folder (the folder containing `Data` and `Database`) so the CSV paths resolve.
-
-MySQL 8.0.16 or later: use the mysql command line for Database/MySQL; large generated INSERT scripts load the same CSV rows without server file access.
-
-SQLite: use Python 3's sqlite3 module to build both database files from the supplied CSVs. SQLite supports views and parameterized saved queries but no stored procedures.
+- **SQL Server:** Open the scripts in `Database/SQL_Server` with SQL Server Management Studio (SSMS).
+- **PostgreSQL:** Use `psql` for the scripts in `Database/PostgreSQL`. Open a terminal in the extracted `Kora-Levels-2-4` folder (the folder containing `Data` and `Database`) so the CSV paths resolve.
+- **MySQL 8.0.16 or later:** Use the `mysql` command line for `Database/MySQL`. The generated INSERT scripts load the CSV rows without server file access.
+- **SQLite:** Use Python 3 to build two database files from the supplied CSVs. SQLite supports views and saved parameterized queries but not stored procedures.
 
 ## Validation status
 
@@ -30,17 +27,26 @@ Run the check script for your chosen engine after loading. It checks row counts 
 
 ## SQL Server
 
-Run Database/SQL_Server/00_Create_Databases.sql, 01_Load_Operations.sql, 02_Load_People.sql, then 03_Check_Load.sql in order. Run 04_Reporting_Indexes.sql only after a successful load. Each loader uses a transaction and refuses existing kora tables. Run each script in a client that recognizes GO batches.
+Open each script in SSMS and select **Execute**, in this order:
+
+1. `Database/SQL_Server/00_Create_Databases.sql`
+2. `Database/SQL_Server/01_Load_Operations.sql`
+3. `Database/SQL_Server/02_Load_People.sql`
+4. `Database/SQL_Server/03_Check_Load.sql`
+5. After a successful check, optionally run `Database/SQL_Server/04_Reporting_Indexes.sql`.
+
+Keep the `GO` lines in the files. SSMS uses them to separate batches; `GO` is a client command, not SQL sent directly to the server. Each loader uses a transaction and refuses existing `kora` tables.
 
 ## PostgreSQL
 
-Open a terminal in the extracted `Kora-Levels-2-4` folder and run: psql -X -v ON_ERROR_STOP=1 -d postgres -f Database/PostgreSQL/00_Create_Databases.sql
+Open a terminal in the extracted `Kora-Levels-2-4` folder. Run these commands in order:
 
-Then run: psql -X -v ON_ERROR_STOP=1 -d KoraOperations -f Database/PostgreSQL/01_Load_Operations.sql
+1. `psql -X -v ON_ERROR_STOP=1 -d postgres -f Database/PostgreSQL/00_Create_Databases.sql`
+2. `psql -X -v ON_ERROR_STOP=1 -d KoraOperations -f Database/PostgreSQL/01_Load_Operations.sql`
+3. `psql -X -v ON_ERROR_STOP=1 -d KoraPeople -f Database/PostgreSQL/02_Load_People.sql`
+4. `psql -X -v ON_ERROR_STOP=1 -d postgres -f Database/PostgreSQL/03_Check_Load.sql`
 
-Next run: psql -X -v ON_ERROR_STOP=1 -d KoraPeople -f Database/PostgreSQL/02_Load_People.sql
-
-Finally run: psql -X -v ON_ERROR_STOP=1 -d postgres -f Database/PostgreSQL/03_Check_Load.sql. Client-side \copy reads `Data/` from the folder where you ran `psql`. Stop at any error and inspect the transaction before retrying.
+The client-side `\copy` commands read `Data/` from the folder where you ran `psql`. Stop at any error and inspect the transaction before retrying.
 
 
 <!-- page break -->
@@ -49,17 +55,23 @@ Finally run: psql -X -v ON_ERROR_STOP=1 -d postgres -f Database/PostgreSQL/03_Ch
 
 ## MySQL
 
-Use MySQL 8.0.16 or later. Open a terminal in the extracted `Kora-Levels-2-4` folder and run: mysql --default-character-set=utf8mb4 < Database/MySQL/00_Create_Databases.sql
+Use MySQL 8.0.16 or later. Open a terminal in the extracted `Kora-Levels-2-4` folder. Run these commands in order:
 
-Then run: mysql --default-character-set=utf8mb4 KoraOperations < Database/MySQL/01_Load_Operations.sql
+1. `mysql --default-character-set=utf8mb4 < Database/MySQL/00_Create_Databases.sql`
+2. `mysql --default-character-set=utf8mb4 KoraOperations < Database/MySQL/01_Load_Operations.sql`
+3. `mysql --default-character-set=utf8mb4 KoraPeople < Database/MySQL/02_Load_People.sql`
+4. `mysql --default-character-set=utf8mb4 < Database/MySQL/03_Check_Load.sql`
 
-Next run: mysql --default-character-set=utf8mb4 KoraPeople < Database/MySQL/02_Load_People.sql
-
-Finally run: mysql --default-character-set=utf8mb4 < Database/MySQL/03_Check_Load.sql. Every table must show PASS; a SQL error or FAIL invalidates the load. The scripts do not replace existing tables. MySQL does not offer a single atomic transaction over DDL and inserts; after a failed load, create a fresh database pair before retrying.
+Every table must show `PASS`; a SQL error or `FAIL` invalidates the load. The scripts do not replace existing tables. MySQL does not offer a single atomic transaction over DDL and inserts; after a failed load, create a fresh database pair before retrying.
 
 ## SQLite
 
-Run python3 Database/SQLite/00_Build_Databases.py from the extracted `Kora-Levels-2-4` folder, then run python3 Database/SQLite/03_Check_Load.py. The builder creates `Database/SQLite/KoraOperations.sqlite` and `Database/SQLite/KoraPeople.sqlite` from the CSVs. The builder refuses to overwrite an existing database file and checks every table and relationship before renaming its temporary output.
+Open a terminal in the extracted `Kora-Levels-2-4` folder. Run these commands in order:
+
+1. `python3 Database/SQLite/00_Build_Databases.py`
+2. `python3 Database/SQLite/03_Check_Load.py`
+
+The builder creates `Database/SQLite/KoraOperations.sqlite` and `Database/SQLite/KoraPeople.sqlite` from the CSVs. It refuses to overwrite an existing database file and checks every table and relationship before renaming its temporary output.
 
 
 <!-- page break -->
