@@ -15,4 +15,4 @@ Kora is a family of four project packs within the CadencePlus Solutions™ Resou
 - [Read the data dictionary](Kora%20-%20Levels%202-4/Reference/Data_Dictionary.md)
 - [Download the complete learner ZIP](Kora%20-%20Levels%202-4/Kora-Levels-2-4-Learner-Pack.zip?raw=true)
 
-These three projects share four years of synthetic data across two reporting databases. The pack includes SQL Server, PostgreSQL, MySQL and SQLite versions. Choose one business problem in each project.
+These three projects share four years of synthetic data across two reporting databases. The pack includes SQL Server, PostgreSQL and MySQL versions. Choose one business problem in each project.

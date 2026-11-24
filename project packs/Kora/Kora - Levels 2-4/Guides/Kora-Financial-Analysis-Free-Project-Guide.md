@@ -3,7 +3,7 @@
 
 # Kora Financial Analysis - Free Project Guide
 
-Use the SQL objects required for the chosen case. SQL Server and MySQL support stored procedures; PostgreSQL can use a parameterized function. SQLite has no stored procedures: submit a reusable view and a saved parameterized query with equivalent output. SQL Server and PostgreSQL use the kora schema; MySQL and SQLite use tables in the selected database without that prefix.
+Use the SQL objects required for the chosen case. SQL Server and MySQL support stored procedures; PostgreSQL can use a parameterized function. SQL Server and PostgreSQL use the kora schema; MySQL uses tables in the selected database without that prefix.
 
 ## Business problem A
 

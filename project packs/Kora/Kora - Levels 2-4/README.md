@@ -1,6 +1,6 @@
 # Kora Workplace Supply Ltd. - Free Project Pack
 
-Analyze Financial, People and Operations data across four years (2022–2025). Choose one of two business problems in each of the three project guides. The same synthetic dataset supports SQL Server, PostgreSQL, MySQL and SQLite.
+Analyze Financial, People and Operations data across four years (2022–2025). Choose one of two business problems in each of the three project guides. The same synthetic dataset supports SQL Server, PostgreSQL and MySQL.
 
 - [Database setup guide (PDF)](Guides/Kora-Database-Setup-Guide.pdf)
 - [Browse the data dictionary on GitHub](Reference/Data_Dictionary.md)
@@ -9,7 +9,7 @@ Analyze Financial, People and Operations data across four years (2022–2025). C
 
 ## Download the complete learner pack
 
-[Download Kora Levels 2–4 Learner Pack (ZIP)](Kora-Levels-2-4-Learner-Pack.zip?raw=true). Save the file, then use **Extract All** on Windows or double-click it on macOS. The ZIP contains the data CSVs, database loaders, four PDF guides and two reference PDFs. The SQLite setup script builds both databases from the CSVs. Use the validation scripts after loading your chosen engine.
+[Download Kora Levels 2–4 Learner Pack (ZIP)](Kora-Levels-2-4-Learner-Pack.zip?raw=true). Save the file, then use **Extract All** on Windows or double-click it on macOS. The ZIP contains the data CSVs, SQL Server, PostgreSQL and MySQL loaders, four PDF guides and two reference PDFs. Each database folder contains its own numbered scripts and validation file.
 
 ## Reuse and credit
 
