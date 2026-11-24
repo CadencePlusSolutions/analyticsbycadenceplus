@@ -11,7 +11,7 @@ Kora is a family of four project packs within the CadencePlus Solutions™ Resou
 ## Financial, People and Operations: Projects 2–4
 
 - [Browse the four-year project pack](Kora%20-%20Levels%202-4/)
-- [Financial project guide (PDF)](Kora%20-%20Levels%202-4/Guides/Kora-Financial-Analysis-Free-Project-Guide.pdf), [People project guide (PDF)](Kora%20-%20Levels%202-4/Guides/Kora-People-Analysis-Free-Project-Guide.pdf), [Operations project guide (PDF)](Kora%20-%20Levels%202-4/Guides/Kora-Operations-Free-Project-Guide.pdf)
+- [2 - Financial project guide (PDF)](Kora%20-%20Levels%202-4/Guides/Kora-Financial-Analysis-Free-Project-Guide.pdf), [3 - People project guide (PDF)](Kora%20-%20Levels%202-4/Guides/Kora-People-Analysis-Free-Project-Guide.pdf), [4 - Operations project guide (PDF)](Kora%20-%20Levels%202-4/Guides/Kora-Operations-Free-Project-Guide.pdf)
 - [Read the data dictionary](Kora%20-%20Levels%202-4/Reference/Data_Dictionary.md)
 - [Download the complete learner ZIP](Kora%20-%20Levels%202-4/Kora-Levels-2-4-Learner-Pack.zip?raw=true)
 
