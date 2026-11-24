@@ -7,21 +7,21 @@
 
 This four-year synthetic extract covers 1 January 2022 through 31 December 2025: 40 tables and 630,743 rows shared across the financial, people and operations projects. Choose SQL Server, PostgreSQL, MySQL or SQLite. Each engine has separate KoraOperations and KoraPeople databases; SQLite represents them as two files.
 
-Start from an empty database pair. Do not append to Kora Starter or an earlier review extract. The source CSVs in Data are the canonical rows for every engine. Reference/Load_Control_Totals.json lists row counts, hashes and reconciliation controls.
+Start from an empty database pair. Do not append to Kora Starter. The source CSVs in Data are the canonical rows for every engine. Reference/Load_Control_Totals.json lists row counts, hashes and reconciliation controls.
 
 ## Choose an engine
 
 SQL Server: run the T-SQL scripts in Database/SQL_Server with SQL Server Management Studio or another T-SQL client.
 
-PostgreSQL: use psql for the scripts in Database/PostgreSQL; the client-side CSV commands require the pack root as the working directory.
+PostgreSQL: use psql for the scripts in Database/PostgreSQL; open a terminal in the extracted `Kora-Levels-2-4` folder (the folder containing `Data` and `Database`) so the CSV paths resolve.
 
 MySQL 8.0.16 or later: use the mysql command line for Database/MySQL; large generated INSERT scripts load the same CSV rows without server file access.
 
-SQLite: use Python 3's sqlite3 module to build the two included database files, or use the prebuilt files in Database/SQLite. SQLite supports views and parameterized saved queries but no stored procedures.
+SQLite: use Python 3's sqlite3 module to build both database files from the supplied CSVs. SQLite supports views and parameterized saved queries but no stored procedures.
 
 ## Validation status
 
-The CSVs passed authoring checks for relationships, dates, financial balances and stock. The SQLite files were built and passed all 40 row counts, foreign_key_check and quick_check. Run each engine's check script after loading. Live SQL Server, PostgreSQL and MySQL execution was not available in the authoring environment; their scripts require validation on a local server before release.
+Run the check script for your chosen engine after loading. It checks row counts and other data controls.
 
 
 <!-- page break -->
@@ -34,13 +34,13 @@ Run Database/SQL_Server/00_Create_Databases.sql, 01_Load_Operations.sql, 02_Load
 
 ## PostgreSQL
 
-From the pack root, run: psql -X -v ON_ERROR_STOP=1 -d postgres -f Database/PostgreSQL/00_Create_Databases.sql
+Open a terminal in the extracted `Kora-Levels-2-4` folder and run: psql -X -v ON_ERROR_STOP=1 -d postgres -f Database/PostgreSQL/00_Create_Databases.sql
 
 Then run: psql -X -v ON_ERROR_STOP=1 -d KoraOperations -f Database/PostgreSQL/01_Load_Operations.sql
 
 Next run: psql -X -v ON_ERROR_STOP=1 -d KoraPeople -f Database/PostgreSQL/02_Load_People.sql
 
-Finally run: psql -X -v ON_ERROR_STOP=1 -d postgres -f Database/PostgreSQL/03_Check_Load.sql. Client-side \copy reads CSV files relative to the pack root. Stop at any error and inspect the transaction before retrying.
+Finally run: psql -X -v ON_ERROR_STOP=1 -d postgres -f Database/PostgreSQL/03_Check_Load.sql. Client-side \copy reads `Data/` from the folder where you ran `psql`. Stop at any error and inspect the transaction before retrying.
 
 
 <!-- page break -->
@@ -49,7 +49,7 @@ Finally run: psql -X -v ON_ERROR_STOP=1 -d postgres -f Database/PostgreSQL/03_Ch
 
 ## MySQL
 
-Use MySQL 8.0.16 or later. From the pack root, run: mysql --default-character-set=utf8mb4 < Database/MySQL/00_Create_Databases.sql
+Use MySQL 8.0.16 or later. Open a terminal in the extracted `Kora-Levels-2-4` folder and run: mysql --default-character-set=utf8mb4 < Database/MySQL/00_Create_Databases.sql
 
 Then run: mysql --default-character-set=utf8mb4 KoraOperations < Database/MySQL/01_Load_Operations.sql
 
@@ -59,9 +59,7 @@ Finally run: mysql --default-character-set=utf8mb4 < Database/MySQL/03_Check_Loa
 
 ## SQLite
 
-The prebuilt Database/SQLite/KoraOperations.sqlite and KoraPeople.sqlite files are ready to open. Run python3 Database/SQLite/03_Check_Load.py to verify them.
-
-To rebuild from CSV, move the two prebuilt files aside first. Run python3 Database/SQLite/00_Build_Databases.py from any directory, then python3 Database/SQLite/03_Check_Load.py. The builder refuses to overwrite an existing database file and checks every table and relationship before renaming its temporary output.
+Run python3 Database/SQLite/00_Build_Databases.py from the extracted `Kora-Levels-2-4` folder, then run python3 Database/SQLite/03_Check_Load.py. The builder creates `Database/SQLite/KoraOperations.sqlite` and `Database/SQLite/KoraPeople.sqlite` from the CSVs. The builder refuses to overwrite an existing database file and checks every table and relationship before renaming its temporary output.
 
 
 <!-- page break -->
@@ -76,7 +74,7 @@ CSV import is also possible: preserve text IDs, parse ISO dates, use decimal NGN
 
 ## Reusable SQL by engine
 
-The project guides show SQL Server signatures to make parameters and expected output concrete. Implement equivalent behavior in your chosen engine: stored procedures in SQL Server and MySQL, parameterized functions in PostgreSQL, or a reusable view with a saved parameterized query in SQLite. Use the engine-specific starter files in Projects. Explain any limitations of the chosen engine in your methodology.
+The project guides show SQL Server signatures to make parameters and expected output concrete. Implement equivalent behavior in your chosen engine: stored procedures in SQL Server and MySQL, parameterized functions in PostgreSQL, or a reusable view with a saved parameterized query in SQLite. Explain any limitations of the chosen engine in your methodology.
 
 ## Dates and joins
 

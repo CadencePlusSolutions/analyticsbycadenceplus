@@ -1,6 +1,6 @@
 # Kora reporting databases data dictionary
 
-Version 0.2-review | Four reporting years: 1 January 2022 to 31 December 2025 | Currency NGN | Synthetic training data
+Version 0.2 | Four reporting years: 1 January 2022 to 31 December 2025 | Currency NGN | Synthetic training data
 
 This page documents both databases, every table and every field. SQL Server and PostgreSQL use schema `kora`; MySQL uses its database as the namespace; SQLite uses one file per database. Primary and foreign keys are identified below. The same canonical CSV rows are supplied for all four database engines. The SQL type column below uses SQL Server names; PostgreSQL maps `nvarchar` to `varchar`, `decimal` to `numeric`, and `bit` to `boolean`; MySQL uses `varchar`, `decimal`, and `tinyint(1)`; SQLite uses `TEXT`, `NUMERIC`, and `INTEGER` affinities with ISO date strings.
 
