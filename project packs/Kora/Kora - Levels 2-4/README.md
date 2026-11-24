@@ -13,4 +13,4 @@ Analyze Financial, People and Operations data across four years (2022–2025). C
 
 ## Reuse and credit
 
-You may analyse, modify and publish your SQL, dashboards and findings using this free training dataset with credit to CadencePlus Solutions™. Keep the fictional and synthetic labels. Do not present its values as real customer, employee or market data. Third-party software has its own licences.
+You may analyze, modify and publish your SQL, dashboards and findings using this free training dataset with credit to CadencePlus Solutions™. Keep the fictional and synthetic labels. Do not present its values as real customer, employee or market data. Third-party software has its own licences.
