@@ -5,7 +5,7 @@ Analyze Financial, People and Operations data across four years (2022–2025). C
 - [Database setup guide (PDF)](Guides/Kora-Database-Setup-Guide.pdf)
 - [Browse the data dictionary on GitHub](Reference/Data_Dictionary.md)
 - [Database schema diagrams](Reference/Database_Schema.pdf) and [all relationships](Reference/Relationships.csv)
-- [Financial guide (PDF)](Guides/Kora-Financial-Analysis-Free-Project-Guide.pdf), [People guide (PDF)](Guides/Kora-People-Analysis-Free-Project-Guide.pdf), [Operations guide (PDF)](Guides/Kora-Operations-Free-Project-Guide.pdf)
+- [2 - Financial guide (PDF)](Guides/Kora-Financial-Analysis-Free-Project-Guide.pdf), [3 - People guide (PDF)](Guides/Kora-People-Analysis-Free-Project-Guide.pdf), [4 - Operations guide (PDF)](Guides/Kora-Operations-Free-Project-Guide.pdf)
 
 ## Download the complete learner pack
 
