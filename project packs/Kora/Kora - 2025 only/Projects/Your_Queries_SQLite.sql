@@ -4,7 +4,7 @@ SELECT * FROM orders LIMIT 10;
 SELECT * FROM order_lines LIMIT 10;
 SELECT * FROM deliveries LIMIT 10;
 
--- Project 1: Summarise orders placed by month.
+-- Project 1: Summarize orders placed by month.
 -- Next: separate cancelled order value from non-cancelled order value.
 -- Next: calculate cancellation rate at order level.
 -- Next: compare categories and calculate a weighted discount rate.

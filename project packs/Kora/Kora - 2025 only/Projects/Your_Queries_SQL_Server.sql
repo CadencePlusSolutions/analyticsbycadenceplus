@@ -6,7 +6,7 @@ SELECT TOP (10) * FROM kora.orders;
 SELECT TOP (10) * FROM kora.order_lines;
 SELECT TOP (10) * FROM kora.deliveries;
 
--- Project 1: Summarise orders placed by month.
+-- Project 1: Summarize orders placed by month.
 -- Next: separate cancelled order value from non-cancelled order value.
 -- Next: calculate cancellation rate at order level.
 -- Next: compare categories and calculate a weighted discount rate.

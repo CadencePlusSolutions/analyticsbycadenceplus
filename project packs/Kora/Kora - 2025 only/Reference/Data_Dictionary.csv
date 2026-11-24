@@ -7,7 +7,7 @@ branches,branch_name,TEXT,no,Distribution centre name
 branches,region_id,TEXT,no,Branch region key linked to regions
 branches,city,TEXT,no,Branch city
 customers,customer_id,TEXT,no,Unique customer key
-customers,customer_name,TEXT,no,Fictional organisation name
+customers,customer_name,TEXT,no,Fictional organization name
 customers,region_id,TEXT,no,Customer region key linked to regions
 customers,industry,TEXT,no,Customer industry
 customers,segment,TEXT,no,Customer segment

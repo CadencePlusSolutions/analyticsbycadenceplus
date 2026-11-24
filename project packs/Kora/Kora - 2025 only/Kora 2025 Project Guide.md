@@ -10,7 +10,7 @@ CadencePlus Solutions™ · Version 1.0 · October 2026 Kora Workplace Supply Lt
 
 ## Understand the data
 
-Kora Workplace Supply Ltd supplies workplace technology, furniture and business supplies to fictional organisations in Nigeria. This free extract contains orders placed from 1 January to 31 December 2025, their order lines and associated consignments recorded through 31 December 2025. Values are NGN and order value excludes tax.
+Kora Workplace Supply Ltd supplies workplace technology, furniture and business supplies to fictional organizations in Nigeria. This free extract contains orders placed from 1 January to 31 December 2025, their order lines and associated consignments recorded through 31 December 2025. Values are NGN and order value excludes tax.
 
 ### Table details
 
@@ -145,4 +145,4 @@ All-order net value is **17,713,266,033.00 NGN**. This includes cancelled orders
 
 ### Reuse and credit
 
-You may analyse, modify and publish your SQL, dashboards and findings using this free training dataset with credit to CadencePlus Solutions™️. Keep the fictional and synthetic labels. Do not present its values as real customer, employee or market data. Third-party software has its own licences. This starter extract is separate from the paid Jathan Project Pack.
+You may analyze, modify and publish your SQL, dashboards and findings using this free training dataset with credit to CadencePlus Solutions™️. Keep the fictional and synthetic labels. Do not present its values as real customer, employee or market data. Third-party software has its own licences. This starter extract is separate from the paid Jathan Project Pack.
