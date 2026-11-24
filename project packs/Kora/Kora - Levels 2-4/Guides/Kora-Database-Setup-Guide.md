@@ -9,10 +9,30 @@ This four-year synthetic extract covers 1 January 2022 through 31 December 2025:
 
 Start from an empty database pair. Do not append to Kora Starter. The source CSVs in `Data/` are the canonical rows for every engine.
 
-## Database setup
+## SQL Server — `Database/SQL_Server/`
 
-- **SQL Server:** `Database/SQL_Server/` — use SQL Server Management Studio.
-- **PostgreSQL:** `Database/PostgreSQL/` — use `psql` from the extracted `Kora-Levels-2-4` folder so the `Data/` paths resolve.
-- **MySQL 8.0.16 or later:** `Database/MySQL/` — use the MySQL client.
+Open these files in SQL Server Management Studio (SSMS) in order. SSMS handles the `GO` lines in the scripts.
 
-The SQL files in each folder are numbered in run order. Each file identifies its target database in the opening comment. Use the `03_Check_Load.sql` file in the same folder to validate the load.
+1. `00_Create_Databases.sql` — create the two databases.
+2. `01_Load_Operations.sql` — load KoraOperations.
+3. `02_Load_People.sql` — load KoraPeople.
+4. `03_Check_Load.sql` — validate the load.
+5. `04_Reporting_Indexes.sql` — optional, after validation passes.
+
+## PostgreSQL — `Database/PostgreSQL/`
+
+Use `psql` from the extracted `Kora-Levels-2-4` folder so the `Data/` paths resolve. The first comment in each file identifies the target database.
+
+1. `00_Create_Databases.sql` — create the two databases.
+2. `01_Load_Operations.sql` — load KoraOperations.
+3. `02_Load_People.sql` — load KoraPeople.
+4. `03_Check_Load.sql` — validate the load.
+
+## MySQL — `Database/MySQL/`
+
+Use the MySQL client. The first comment in each file identifies the target database.
+
+1. `00_Create_Databases.sql` — create the two databases.
+2. `01_Load_Operations.sql` — load KoraOperations.
+3. `02_Load_People.sql` — load KoraPeople.
+4. `03_Check_Load.sql` — validate the load.
